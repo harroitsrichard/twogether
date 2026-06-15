@@ -3,7 +3,6 @@ import Link from "next/link";
 import {
   ArrowIcon,
   CategoryIcon,
-  HeroCommunityImage,
   ProfileImage,
 } from "@/components/MarketingVisuals";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -30,6 +29,38 @@ function DownArrow() {
         strokeWidth="1.8"
       />
     </svg>
+  );
+}
+
+function HeroEditorialVisual() {
+  const labels = ["Brewery patio", "Trivia night", "Weekend brunch"];
+
+  return (
+    <div className="relative">
+      <div className="absolute -inset-6 rounded-[2.5rem] bg-clay/10 blur-2xl" />
+      <div className="relative overflow-hidden rounded-[2rem] border border-cream/10 bg-cream/10 shadow-soft">
+        <div className="relative min-h-[360px] sm:min-h-[520px]">
+          <Image
+            src={heroImage}
+            alt="Several couples laughing together during a lively local experience"
+            fill
+            priority
+            sizes="(min-width: 1024px) 58vw, 100vw"
+            className="object-cover"
+          />
+        </div>
+        <div className="pointer-events-none absolute inset-x-0 top-4 flex flex-wrap justify-center gap-2 px-4">
+          {labels.map((label) => (
+            <span
+              key={label}
+              className="rounded-full border border-cream/20 bg-navy/80 px-4 py-2 text-xs font-bold text-cream shadow-sm backdrop-blur"
+            >
+              {label}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -94,27 +125,33 @@ function TwogetherPlanCard() {
 export default function Home() {
   return (
     <>
-      <SiteHeader />
+      <SiteHeader variant="dark" />
       <main id="top" className="bg-cream text-navy">
-        <section className="overflow-hidden border-b border-navy/10">
-          <div className="container-page grid min-h-[calc(100svh-4rem)] items-center gap-12 py-12 lg:grid-cols-[0.86fr_1.14fr] lg:py-16">
+        <section className="overflow-hidden bg-navy text-cream">
+          <div className="container-page grid min-h-[calc(100svh-4rem)] items-center gap-12 py-12 lg:grid-cols-[0.82fr_1.18fr] lg:py-16">
             <div className="max-w-2xl">
-              <h1 className="display-heading text-navy">Every Couple Needs Friends Who Are Couples.</h1>
-              <p className="body-large mt-6 max-w-xl">
+              <h1 className="display-heading text-cream">Every Couple Needs Friends Who Are Couples.</h1>
+              <p className="mt-6 max-w-xl text-base leading-8 text-cream/80 sm:text-lg">
                 Twogether helps couples meet quality couples, discover local experiences, and build
                 meaningful friendships through real-world plans.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <Link href="/join" className="button-primary">
+                <Link
+                  href="/join"
+                  className="inline-flex min-h-12 items-center justify-center rounded-md bg-clay px-6 py-3 text-sm font-semibold text-cream transition hover:bg-clay-dark focus:outline-none focus:ring-2 focus:ring-clay focus:ring-offset-2 focus:ring-offset-navy sm:whitespace-nowrap"
+                >
                   Join the Founding Couples List
                 </Link>
-                <Link href="/how-it-works" className="button-secondary">
+                <Link
+                  href="/how-it-works"
+                  className="inline-flex min-h-12 items-center justify-center rounded-md border border-cream/30 px-6 py-3 text-sm font-semibold text-cream transition hover:border-cream hover:bg-cream hover:text-navy focus:outline-none focus:ring-2 focus:ring-cream focus:ring-offset-2 focus:ring-offset-navy sm:whitespace-nowrap"
+                >
                   See How It Works
                 </Link>
               </div>
             </div>
 
-            <HeroCommunityImage />
+            <HeroEditorialVisual />
           </div>
         </section>
 
