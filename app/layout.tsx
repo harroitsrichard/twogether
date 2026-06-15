@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Couples Around You | Couples Social Planning Platform",
+  title: "Twogether | Couples Social Planning Platform",
   description:
     "A Las Vegas couples social planning platform for finding compatible couples and planning better dinners, activities, and nights out together.",
 };

@@ -10,7 +10,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-[#ead8c4]/80 bg-porcelain/[0.92] backdrop-blur">
       <div className="container-page flex min-h-16 items-center justify-between gap-4">
-        <a href="#top" className="group inline-flex flex-col" aria-label="Couples Around You home">
+        <a href="#top" className="group inline-flex flex-col" aria-label="Twogether home">
           <span className="font-serif text-xl uppercase leading-none tracking-[0.22em] text-copper">
             Couples
           </span>

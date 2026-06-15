@@ -25,7 +25,7 @@ export async function POST(request: Request) {
     const payload: LeadPayload = {
       type: body.type,
       submittedAt: new Date().toISOString(),
-      source: "couples-around-you-validation-site",
+      source: "twogether-validation-site",
       fields: body.fields,
     };
 

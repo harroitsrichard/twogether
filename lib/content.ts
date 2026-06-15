@@ -52,7 +52,7 @@ export const faqs = [
   {
     question: "Is this for singles?",
     answer:
-      "No. Couples Around You is designed around shared couple profiles and couple-to-couple plans.",
+      "No. Twogether is designed around shared couple profiles and couple-to-couple plans.",
   },
   {
     question: "Do we have to be married?",

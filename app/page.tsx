@@ -86,7 +86,7 @@ export default function Home() {
           className="bg-linen"
           label="The platform vision"
           title="A planning platform for couples who want better people and better plans."
-          intro="Couples Around You is being shaped as a tool for couples to find compatible couples, choose where to go, coordinate availability, and turn a good idea into a real plan."
+          intro="Twogether is being shaped as a tool for couples to find compatible couples, choose where to go, coordinate availability, and turn a good idea into a real plan."
         >
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
             {platformBenefits.map((benefit) => (

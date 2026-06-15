@@ -1,4 +1,4 @@
-# Couples Around You
+# Twogether
 
 A clean MVP website for a Las Vegas couples social planning platform. This is a validation site only: no accounts, matching logic, payments, messaging, restaurant dashboard, native app, or backend database.
 

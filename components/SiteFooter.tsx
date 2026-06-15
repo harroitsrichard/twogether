@@ -12,7 +12,7 @@ export function SiteFooter() {
     <footer className="bg-ink py-12 text-white">
       <div className="container-page grid gap-10 md:grid-cols-[1.2fr_1fr_1fr]">
         <div>
-          <p className="font-serif text-2xl uppercase tracking-[0.22em] text-copper">Couples</p>
+          <p className="font-serif text-2xl uppercase tracking-[0.22em] text-copper">Twogether</p>
           <p className="text-[0.65rem] font-bold uppercase tracking-[0.42em] text-champagne">
             Around You
           </p>
@@ -33,7 +33,7 @@ export function SiteFooter() {
         <div className="text-sm text-white/65">
           <p className="font-semibold text-white">Las Vegas Validation</p>
           <p className="mt-3 leading-7">Founding couple and venue partner conversations are open before the full platform is built.</p>
-          <p className="mt-8">© 2026 Couples Around You. All rights reserved.</p>
+          <p className="mt-8">© 2026 Twogether. All rights reserved.</p>
         </div>
       </div>
     </footer>
