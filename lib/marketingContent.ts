@@ -3,41 +3,31 @@ export const profileImage = "/images/twogether-couple-profiles.png";
 
 export const homepageHighlights = [
   {
-    title: "Meet quality couples.",
-    copy: "Discover couples with shared interests, similar lifestyle, and the kind of energy that makes plans feel easy.",
-    href: "/couples",
-    cta: "Explore couple discovery",
+    title: "Quality Couples",
+    copy: "Meet people you'd genuinely enjoy spending time with.",
   },
   {
-    title: "Turn connection into real plans.",
-    copy: "Choose a restaurant, activity, coffee spot, trivia night, pickleball session, brunch, or local experience together.",
-    href: "/how-it-works",
-    cta: "See the flow",
+    title: "Shared Experiences",
+    copy: "Discover restaurants, activities, and local experiences worth saying yes to.",
   },
   {
-    title: "Local perks make it worth coming back.",
-    copy: "Use Twogether to discover restaurants, coffee shops, venues, activity providers, and offers for shared plans.",
-    href: "/experiences",
-    cta: "Browse experiences",
+    title: "Lasting Friendships",
+    copy: "Turn simple plans into meaningful friendships and stronger community.",
   },
 ];
 
 export const shortHowItWorks = [
   {
-    title: "Create your couple profile",
-    copy: "Share interests, lifestyle, favorite local spots, and what makes a good hangout.",
+    title: "Create Your Couple Profile",
   },
   {
-    title: "Discover quality couples",
-    copy: "Find couples nearby with shared interests and a similar social pace.",
+    title: "Discover Quality Couples",
   },
   {
-    title: "Choose a place or activity",
-    copy: "Pick the restaurant, activity, or local experience that works for everyone.",
+    title: "Choose Something Fun To Do",
   },
   {
-    title: "Meet up and build friendship",
-    copy: "Turn one good plan into a richer social life together.",
+    title: "Build Real Friendships",
   },
 ];
 
@@ -73,6 +63,7 @@ export const coupleProfiles = [
     name: "The Riveras",
     city: "Las Vegas, NV",
     tags: ["Foodie", "Live Music", "Weekend Trips"],
+    bio: "Always looking for casual food spots, live music, and easy weekend plans.",
     cues: ["Loves trying local restaurants", "Usually free on Friday evenings"],
     prompt: "You would probably get along if you like easy dinner plans, local music, and weekend exploring.",
     position: "0% 0%",
@@ -81,6 +72,7 @@ export const coupleProfiles = [
     name: "The Chens",
     city: "Henderson, NV",
     tags: ["Dogs", "Coffee", "Travel"],
+    bio: "Coffee regulars who like dog-friendly patios, travel stories, and walkable neighborhoods.",
     cues: ["Dog-friendly patios", "Morning coffee plans"],
     prompt: "You would probably get along if your ideal Saturday starts with coffee and a walkable neighborhood.",
     position: "100% 0%",
@@ -89,6 +81,7 @@ export const coupleProfiles = [
     name: "The Johnsons",
     city: "Summerlin, NV",
     tags: ["Pickleball", "Trivia", "Brunch"],
+    bio: "Activity-first couple into friendly competition, brunch, and low-pressure group plans.",
     cues: ["Activity-first hangouts", "Likes friendly competition"],
     prompt: "You would probably get along if you want plans that feel active, social, and easy to repeat.",
     position: "0% 100%",
@@ -97,6 +90,7 @@ export const coupleProfiles = [
     name: "The Millers",
     city: "North Las Vegas, NV",
     tags: ["Board Games", "Breweries", "Hiking"],
+    bio: "Low-key hosts who enjoy board games, casual breweries, and a good trail recommendation.",
     cues: ["Game-night regulars", "Low-key weekend plans"],
     prompt: "You would probably get along if you enjoy relaxed groups, board games, and casual outdoor plans.",
     position: "100% 100%",
@@ -129,27 +123,35 @@ export const discoverySignals = [
 export const experienceCategories = [
   {
     title: "Restaurants",
-    copy: "Neighborhood spots, casual group tables, and places that make the first plan easy.",
+    copy: "Neighborhood spots and casual group tables.",
   },
   {
-    title: "Coffee shops",
-    copy: "Low-pressure daytime plans, walkable meetups, and relaxed conversations.",
+    title: "Coffee Shops",
+    copy: "Low-pressure daytime plans and relaxed conversation.",
   },
   {
-    title: "Activities",
-    copy: "Pickleball, trivia, game nights, weekend activities, and other plan-friendly options.",
+    title: "Trivia",
+    copy: "Easy group energy with built-in conversation.",
   },
   {
-    title: "Local events",
-    copy: "Community gatherings, live music, markets, and seasonal things to try together.",
+    title: "Pickleball",
+    copy: "Activity-first plans that feel light and social.",
   },
   {
-    title: "Partner discounts",
-    copy: "Offers that give couples more reasons to go out and try something new together.",
+    title: "Live Music",
+    copy: "Local nights out that feel shared, not staged.",
   },
   {
-    title: "Featured local spots",
-    copy: "Curated local options that support the friendship loop without taking over the product.",
+    title: "Breweries",
+    copy: "Casual patios, tastings, and friendly group tables.",
+  },
+  {
+    title: "Weekend Activities",
+    copy: "Markets, festivals, walks, and easy weekend ideas.",
+  },
+  {
+    title: "Food Halls",
+    copy: "Flexible places where everyone can find something they like.",
   },
 ];
 
@@ -171,16 +173,30 @@ export const partnerOffers = [
   },
   {
     name: "Wildflower Coffee",
-    offer: "BOGO Drinks",
+    offer: "BOGO",
     detail: "Easy morning or afternoon plans",
     initials: "WC",
   },
   {
+    name: "Esther's Kitchen",
+    offer: "Featured Venue",
+    detail: "A great table for a first shared plan",
+    initials: "EK",
+  },
+  {
     name: "Pickleball Club",
-    offer: "20% Off",
-    detail: "Court rentals for group play",
+    offer: "Exclusive Offer",
+    detail: "Court time for group play",
     initials: "PC",
   },
+];
+
+export const twogetherExamples = [
+  "Trivia Night",
+  "Pickleball Session",
+  "Coffee Meetup",
+  "Food Hall Visit",
+  "Weekend Brunch",
 ];
 
 export const sharedPlans = [
