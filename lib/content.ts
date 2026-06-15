@@ -50,48 +50,33 @@ export const foundingMemberBenefits = [
 
 export const faqs = [
   {
-    question: "Is Twogether a dating app or swinger app?",
+    question: "Who is Twogether for?",
     answer:
-      "No. Twogether is a friendship-first platform for established couples seeking meaningful friendships, shared experiences, and community. It is not designed for dating, hookups, swinging, or adult lifestyle connections.",
+      "Twogether is for established couples who want to discover like-minded couples, explore local experiences, and build meaningful friendships through real-world plans.",
   },
   {
-    question: "Is this for singles?",
+    question: "How do couples discover each other?",
     answer:
-      "No. Twogether is designed around shared couple profiles, couple friends, and couple-to-couple plans.",
+      "Couples create shared profiles with interests, city, lifestyle tags, and favorite activities so they can find couples with shared interests nearby.",
   },
   {
-    question: "Do we have to be married?",
+    question: "Do couples choose their own plans?",
     answer:
-      "No. Married, engaged, and serious long-term couples are welcome to join the founding list.",
+      "Yes. Couples decide who to connect with, which local experiences to explore, and what plans make sense for everyone involved.",
   },
   {
-    question: "Is this only Las Vegas?",
+    question: "What kinds of experiences are included?",
     answer:
-      "Las Vegas is the first market for validation. The platform could expand later if the model works locally.",
+      "Twogether is built around everyday local experiences such as restaurants, coffee, trivia, pickleball, breweries, live music, game nights, and weekend activities.",
   },
   {
-    question: "How would couples connect?",
+    question: "How do partner discounts work?",
     answer:
-      "The future platform is expected to use shared couple profiles, interests, lifestyle, location, availability, and planning preferences to help couples discover similar couples nearby.",
-  },
-  {
-    question: "Who plans the night?",
-    answer:
-      "Couples stay in control. The goal is for couples to choose who they connect with, where they go, and when they meet through the platform.",
-  },
-  {
-    question: "Will there be monthly membership?",
-    answer:
-      "Possibly. Membership may include access to the couple friendship network, discovery tools, real-plan tools, restaurant perks, and founding member pricing. Pricing is still being validated.",
-  },
-  {
-    question: "How do restaurants participate?",
-    answer:
-      "Restaurants and venues can become discovery or booking partners when couples are choosing where to go. Future models may include featured placement, partner perks, referrals, or revenue share.",
+      "Local partners can offer perks that give couples more reasons to try new places and make real-world plans together.",
   },
   {
     question: "Is this live yet?",
     answer:
-      "Not as a full app yet. This site is validating demand from couples and venues before accounts, conversations, payments, or the full product is built.",
+      "Twogether is building the founding Las Vegas community first. Couples and local partners can join the interest lists while the full product is shaped.",
   },
 ];

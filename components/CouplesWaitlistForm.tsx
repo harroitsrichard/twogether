@@ -43,10 +43,10 @@ export function CouplesWaitlistForm() {
         <TextField label="City / neighborhood" name="cityNeighborhood" required autoComplete="address-level2" />
         <SelectField
           label="Couple Status"
-          name="relationshipStatus"
+          name="coupleStatus"
           required
           placeholder="Select one"
-          options={["Married", "Engaged", "Long-term relationship", "Other serious relationship"]}
+          options={["Married", "Engaged", "Long-term couple", "Other established couple"]}
         />
         <SelectField
           label="Do you have kids?"

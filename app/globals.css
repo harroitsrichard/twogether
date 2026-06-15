@@ -13,8 +13,8 @@
 
 body {
   margin: 0;
-  background: #fffdf9;
-  color: #221f1c;
+  background: #fff7eb;
+  color: #09213f;
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
@@ -22,8 +22,8 @@ body {
 }
 
 ::selection {
-  background: #ead8c4;
-  color: #221f1c;
+  background: #f4ead8;
+  color: #09213f;
 }
 
 input,
@@ -43,34 +43,34 @@ textarea {
   }
 
   .eyebrow {
-    @apply text-xs font-semibold uppercase tracking-[0.18em] text-copper;
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-clay;
   }
 
   .display-heading {
-    @apply font-serif text-4xl leading-[0.98] text-ink sm:text-5xl lg:text-7xl;
+    @apply font-serif text-5xl leading-[0.96] text-navy sm:text-6xl lg:text-7xl;
   }
 
   .section-heading {
-    @apply font-serif text-3xl leading-tight text-ink sm:text-4xl lg:text-5xl;
+    @apply font-serif text-3xl leading-tight text-navy sm:text-4xl lg:text-5xl;
   }
 
   .body-large {
-    @apply text-base leading-8 text-ink-soft sm:text-lg;
+    @apply text-base leading-8 text-navy-soft sm:text-lg;
   }
 
   .button-primary {
-    @apply inline-flex min-h-12 items-center justify-center rounded-sm bg-copper px-6 py-3 text-sm font-semibold text-white transition hover:bg-copper-dark focus:outline-none focus:ring-2 focus:ring-copper focus:ring-offset-2 focus:ring-offset-porcelain;
+    @apply inline-flex min-h-12 items-center justify-center rounded-md bg-navy px-6 py-3 text-sm font-semibold text-cream transition hover:bg-navy-soft focus:outline-none focus:ring-2 focus:ring-navy focus:ring-offset-2 focus:ring-offset-cream sm:whitespace-nowrap;
   }
 
   .button-secondary {
-    @apply inline-flex min-h-12 items-center justify-center rounded-sm border border-copper px-6 py-3 text-sm font-semibold text-copper transition hover:bg-copper hover:text-white focus:outline-none focus:ring-2 focus:ring-copper focus:ring-offset-2 focus:ring-offset-porcelain;
+    @apply inline-flex min-h-12 items-center justify-center rounded-md border border-navy/30 px-6 py-3 text-sm font-semibold text-navy transition hover:border-navy hover:bg-navy hover:text-cream focus:outline-none focus:ring-2 focus:ring-navy focus:ring-offset-2 focus:ring-offset-cream sm:whitespace-nowrap;
   }
 
   .field-label {
-    @apply text-sm font-semibold text-ink;
+    @apply text-sm font-semibold text-navy;
   }
 
   .field-control {
-    @apply mt-2 min-h-12 w-full rounded-sm border border-[#d8c8b8] bg-white px-4 text-sm text-ink outline-none transition placeholder:text-[#9b9188] focus:border-copper focus:ring-2 focus:ring-copper/20;
+    @apply mt-2 min-h-12 w-full rounded-md border border-navy/15 bg-white px-4 text-sm text-navy outline-none transition placeholder:text-navy/40 focus:border-clay focus:ring-2 focus:ring-clay/20;
   }
 }
