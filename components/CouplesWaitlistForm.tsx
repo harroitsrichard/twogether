@@ -31,7 +31,7 @@ export function CouplesWaitlistForm() {
       <div className="mb-8">
         <h3 className="font-serif text-3xl text-ink">Founding Couples List</h3>
         <p className="mt-3 text-sm leading-6 text-ink-soft">
-          Tell us what would make a couple friendship platform useful enough to try, recommend, and eventually pay for.
+          Tell us what would make a friendship-first couples platform useful enough to try, recommend, and eventually pay for.
         </p>
       </div>
 
@@ -42,7 +42,7 @@ export function CouplesWaitlistForm() {
         <TextField label="Phone optional" name="phone" type="tel" autoComplete="tel" />
         <TextField label="City / neighborhood" name="cityNeighborhood" required autoComplete="address-level2" />
         <SelectField
-          label="Couple status"
+          label="Couple Status"
           name="relationshipStatus"
           required
           placeholder="Select one"

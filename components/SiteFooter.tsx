@@ -17,7 +17,7 @@ export function SiteFooter() {
             Couple Friendship
           </p>
           <p className="mt-5 max-w-sm text-sm leading-7 text-white/70">
-            Twogether helps couples find similar couples, build real friendships, and make real-world plans at local restaurants, activities, and venues.
+            Twogether helps couples find similar couples, build meaningful friendships, and make real-world plans together.
           </p>
         </div>
 

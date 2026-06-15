@@ -41,7 +41,7 @@ export const planCards = [
 
 export const foundingMemberBenefits = [
   "Early access to the couple friendship network",
-  "Input on shared profiles, discovery, and planning tools",
+  "Input on shared profiles, discovery, and real-plan tools",
   "Founding member pricing before public launch",
   "Restaurant perks and preferred partner offers when available",
   "A voice in shaping shared-interest discovery and group planning features",
@@ -52,7 +52,7 @@ export const faqs = [
   {
     question: "Is Twogether a dating app or swinger app?",
     answer:
-      "No. Twogether is a friendship-first platform for established couples who want to meet like-minded couples, build real friendships, and make shared plans together. It is not for dating, hookups, swinging, or adult lifestyle connections.",
+      "No. Twogether is a friendship-first platform for established couples seeking meaningful friendships, shared experiences, and community. It is not designed for dating, hookups, swinging, or adult lifestyle connections.",
   },
   {
     question: "Is this for singles?",
@@ -82,7 +82,7 @@ export const faqs = [
   {
     question: "Will there be monthly membership?",
     answer:
-      "Possibly. Membership may include access to the couple friendship network, discovery tools, planning tools, restaurant perks, and founding member pricing. Pricing is still being validated.",
+      "Possibly. Membership may include access to the couple friendship network, discovery tools, real-plan tools, restaurant perks, and founding member pricing. Pricing is still being validated.",
   },
   {
     question: "How do restaurants participate?",
@@ -92,6 +92,6 @@ export const faqs = [
   {
     question: "Is this live yet?",
     answer:
-      "Not as a full app yet. This site is validating demand from couples and venues before accounts, conversations, payments, or a full planning product are built.",
+      "Not as a full app yet. This site is validating demand from couples and venues before accounts, conversations, payments, or the full product is built.",
   },
 ];

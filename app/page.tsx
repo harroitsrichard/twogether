@@ -41,10 +41,10 @@ export default function Home() {
         <section className="relative overflow-hidden border-b border-champagne bg-porcelain">
           <div className="container-page grid min-h-[calc(100svh-4rem)] items-center gap-10 py-10 lg:grid-cols-[0.9fr_1.1fr] lg:py-0">
             <div className="z-10 max-w-2xl">
-              <p className="eyebrow">Couple friendship, made easier</p>
-              <h1 className="display-heading mt-4">Find your couple crew.</h1>
+              <p className="eyebrow">For established couples seeking real friendship</p>
+              <h1 className="display-heading mt-4">Find Your Couple Crew.</h1>
               <p className="body-large mt-6 max-w-xl">
-                Twogether helps couples meet like-minded couples, build real friendships, and make shared plans at local restaurants, activities, and venues.
+                Meet like-minded couples, build real friendships, and make shared plans around the things you already love to do.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a href="#waitlist" className="button-primary">
@@ -54,6 +54,10 @@ export default function Home() {
                   For Restaurants &amp; Venues
                 </a>
               </div>
+              <p className="mt-4 max-w-xl text-sm font-semibold leading-6 text-ink-soft">
+                Friendship-first. Not a dating app. Not a swinger platform. Just great couples meeting great couples.
+                <span className="block">Built for established couples, not hookups or adult lifestyle connections.</span>
+              </p>
             </div>
 
             <div className="relative min-h-[360px] overflow-hidden rounded-sm shadow-soft lg:-mr-10 lg:min-h-[620px]">
@@ -72,9 +76,9 @@ export default function Home() {
 
         <SectionShell
           id="about"
-          label="The gap"
-          title="Making couple friends should feel natural — not awkward."
-          intro={'Most couples want deeper friendships, but finding couples with similar interests, lifestyle, values, and energy is harder than it should be. Twogether helps turn "we should hang out sometime" into real plans with couples who feel like your kind of people.'}
+          label="Couple friends"
+          title="Finding couple friends shouldn’t be left to chance."
+          intro={'Most couples aren’t looking for more social media. They’re looking for people they genuinely enjoy spending time with — couples who share their interests, lifestyle, values, and energy. Twogether helps turn "we should hang out sometime" into real plans with couples who feel like your kind of people.'}
         >
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
             {problemPoints.map((point) => (
@@ -88,7 +92,7 @@ export default function Home() {
         <SectionShell
           className="bg-linen"
           label="The platform vision"
-          title="A friendship-first platform for couples who want real connection."
+          title="A friendship-first couples platform for real connection."
           intro="Twogether is being built to help couples create shared profiles, discover similar couples nearby, start conversations, choose restaurants or activities, and coordinate real hangouts together."
         >
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -105,7 +109,7 @@ export default function Home() {
           id="how-it-works"
           label="How it works"
           title="From couple profile to real hangout."
-          intro="This is the future workflow being validated. The full account, discovery, conversation, coordination, and planning product has not been built yet."
+          intro="This is the future product flow being validated. The full account, discovery, conversation, coordination, and friendship-first product has not been built yet."
         >
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-6">
             {howItWorks.map((step, index) => (
@@ -130,7 +134,7 @@ export default function Home() {
           <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
             <div>
               <p className="max-w-md text-base leading-8 text-white/72">
-                Founding couples will help validate which planning use cases matter most before the full platform is built.
+                Founding couples will help validate which real-world plan types matter most before the full platform is built.
               </p>
               <a href="#waitlist" className="button-primary mt-8">
                 Join the Founding List
@@ -198,7 +202,7 @@ export default function Home() {
                 <p className="eyebrow">Founding couples</p>
                 <h2 className="section-heading mt-3">Join the founding couples list.</h2>
                 <p className="body-large mt-5">
-                  This form validates interest in the real platform: shared couple profiles, similar-couple discovery, natural conversations, and planning tools for real hangouts.
+                  This form validates interest in the real platform: shared couple profiles, similar-couple discovery, natural conversations, and real hangouts.
                 </p>
               </div>
               <CouplesWaitlistForm />
