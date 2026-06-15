@@ -47,6 +47,20 @@ Run lint checks:
 npm run lint
 ```
 
+Run TypeScript checks:
+
+```bash
+npm run typecheck
+```
+
+Recommended pre-deploy check:
+
+```bash
+npm run lint
+npm run typecheck
+npm run build
+```
+
 ## Scripts
 
 - `npm run dev` starts the local Next.js development server.
@@ -54,6 +68,7 @@ npm run lint
 - `npm run build` creates a production build.
 - `npm run start` serves the production build after `npm run build`.
 - `npm run lint` checks the project with ESLint.
+- `npm run typecheck` checks TypeScript without emitting build output.
 - `npm run clean` removes the generated `.next` folder.
 
 ## Current Forms
