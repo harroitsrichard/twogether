@@ -1,58 +1,63 @@
 export const howItWorks = [
   {
-    title: "Create a couple profile",
-    copy: "Share interests, life stage, neighborhood, availability, and the kinds of plans you actually enjoy.",
+    title: "Create your couple profile",
+    copy: "Share your interests, lifestyle, availability, and the kinds of local hangouts you actually enjoy.",
   },
   {
-    title: "Connect with similar couples",
-    copy: "Discover couples nearby who feel like a natural fit for dinner, activities, family plans, or small group nights out.",
+    title: "Discover similar couples",
+    copy: "Find like-minded couples nearby who share your interests, similar lifestyle, and energy.",
   },
   {
-    title: "Choose a place together",
-    copy: "Pick a restaurant, activity, or location that works for the group instead of leaving one person to handle the whole plan.",
+    title: "Start a conversation",
+    copy: "Connect naturally before making plans, so the first hangout feels more comfortable.",
   },
   {
-    title: "Pick a date and time",
-    copy: "Coordinate availability as a group so the plan can move from a vague idea to a real night on the calendar.",
+    title: "Choose a place or activity",
+    copy: "Pick a restaurant, activity, or local spot that works for everyone.",
   },
   {
-    title: "Show up and enjoy the night",
-    copy: "Meet with context, shared expectations, and a plan everyone helped shape.",
+    title: "Pick a time together",
+    copy: "Coordinate availability together so the idea becomes a real plan on the calendar.",
+  },
+  {
+    title: "Show up and enjoy the hangout",
+    copy: "Meet up with shared context, clear plans, and room for real friendship to grow.",
   },
 ];
 
 export const planCards = [
   "Dinner with another couple",
+  "Local restaurant night",
   "Brunch",
   "Coffee meetup",
   "Family-friendly weekend activity",
+  "Activity venue",
   "Game night",
-  "Double date",
   "Church/community friends",
   "Business-minded couples",
   "New-to-Vegas couples",
-  "Small group night out",
+  "Small group hangout",
 ];
 
 export const foundingMemberBenefits = [
-  "Early access to the couples network",
-  "Input on profile discovery and planning tools",
+  "Early access to the couple friendship network",
+  "Input on shared profiles, discovery, and planning tools",
   "Founding member pricing before public launch",
   "Restaurant perks and preferred partner offers when available",
-  "A voice in shaping compatibility signals and group planning features",
+  "A voice in shaping shared-interest discovery and group planning features",
   "Priority access as the Las Vegas test group grows",
 ];
 
 export const faqs = [
   {
-    question: "Is this a dating app?",
+    question: "Is Twogether a dating app or swinger app?",
     answer:
-      "No. This is for established couples who want to meet other couples and plan better nights out together. It is not built for singles dating.",
+      "No. Twogether is a friendship-first platform for established couples who want to meet like-minded couples, build real friendships, and make shared plans together. It is not for dating, hookups, swinging, or adult lifestyle connections.",
   },
   {
     question: "Is this for singles?",
     answer:
-      "No. Twogether is designed around shared couple profiles and couple-to-couple plans.",
+      "No. Twogether is designed around shared couple profiles, couple friends, and couple-to-couple plans.",
   },
   {
     question: "Do we have to be married?",
@@ -67,17 +72,17 @@ export const faqs = [
   {
     question: "How would couples connect?",
     answer:
-      "The future platform is expected to use shared couple profiles, interests, life stage, location, availability, and planning preferences to help couples discover compatible people nearby.",
+      "The future platform is expected to use shared couple profiles, interests, lifestyle, location, availability, and planning preferences to help couples discover similar couples nearby.",
   },
   {
     question: "Who plans the night?",
     answer:
-      "The goal is for couples to choose the place and time together through the platform. The founder is validating the flow, not trying to personally plan every dinner.",
+      "Couples stay in control. The goal is for couples to choose who they connect with, where they go, and when they meet through the platform.",
   },
   {
     question: "Will there be monthly membership?",
     answer:
-      "Possibly. Membership may include access to the couples network, discovery tools, planning tools, restaurant perks, and founding member pricing. Pricing is still being validated.",
+      "Possibly. Membership may include access to the couple friendship network, discovery tools, planning tools, restaurant perks, and founding member pricing. Pricing is still being validated.",
   },
   {
     question: "How do restaurants participate?",
@@ -87,6 +92,6 @@ export const faqs = [
   {
     question: "Is this live yet?",
     answer:
-      "Not as a full app yet. This site is validating demand from couples and venues before accounts, matching, messaging, payments, or a full planning product are built.",
+      "Not as a full app yet. This site is validating demand from couples and venues before accounts, conversations, payments, or a full planning product are built.",
   },
 ];

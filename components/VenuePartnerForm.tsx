@@ -31,7 +31,7 @@ export function VenuePartnerForm() {
       <div className="mb-8">
         <h3 className="font-serif text-3xl text-ink">Venue Partner Interest</h3>
         <p className="mt-3 text-sm leading-6 text-ink-soft">
-          Share a few details so we can understand how your venue could fit into future couple-led plans and group bookings.
+          Share a few details so we can understand how your venue could fit into future couple-led local hangouts and group bookings.
         </p>
       </div>
 

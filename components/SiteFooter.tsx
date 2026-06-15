@@ -14,10 +14,10 @@ export function SiteFooter() {
         <div>
           <p className="font-serif text-2xl uppercase tracking-[0.22em] text-copper">Twogether</p>
           <p className="text-[0.65rem] font-bold uppercase tracking-[0.42em] text-champagne">
-            Around You
+            Couple Friendship
           </p>
           <p className="mt-5 max-w-sm text-sm leading-7 text-white/70">
-            A Las Vegas couples social planning platform for finding compatible couples and planning better nights out together.
+            Twogether helps couples find similar couples, build real friendships, and make real-world plans at local restaurants, activities, and venues.
           </p>
         </div>
 

@@ -12,10 +12,10 @@ export function SiteHeader() {
       <div className="container-page flex min-h-16 items-center justify-between gap-4">
         <a href="#top" className="group inline-flex flex-col" aria-label="Twogether home">
           <span className="font-serif text-xl uppercase leading-none tracking-[0.22em] text-copper">
-            Couples
+            Twogether
           </span>
           <span className="text-[0.58rem] font-bold uppercase tracking-[0.42em] text-copper-dark">
-            Around You
+            Couple Friendship
           </span>
         </a>
 
@@ -32,7 +32,7 @@ export function SiteHeader() {
         </nav>
 
         <a href="#waitlist" className="button-primary hidden sm:inline-flex">
-          Join Founding List
+          Join the List
         </a>
       </div>
     </header>

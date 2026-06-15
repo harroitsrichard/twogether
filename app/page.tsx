@@ -8,18 +8,20 @@ import { VenuePartnerForm } from "@/components/VenuePartnerForm";
 import { foundingMemberBenefits, howItWorks, planCards } from "@/lib/content";
 
 const problemPoints = [
-  "Making couple friends often starts with random texts",
-  "Group chats get awkward before a plan is made",
-  "Couples fall back on the same few friends every time",
-  "One person usually ends up organizing everything manually",
+  "Your social circle changes as life changes",
+  "It is hard to find couples with similar interests and energy",
+  "Plans often stay stuck in group chats",
+  "One person usually ends up coordinating everything",
+  "Good friendship opportunities are easy to miss",
 ];
 
 const platformBenefits = [
   "Create a shared couple profile",
-  "Discover compatible couples nearby",
-  "Choose restaurants or activities together",
-  "Coordinate date and time as a group",
-  "Show up without one person carrying the whole plan",
+  "Discover similar couples nearby",
+  "Start a natural conversation",
+  "Choose a restaurant, activity, or local spot",
+  "Pick a time together",
+  "Meet up and build real friendship",
 ];
 
 const venueBenefits = [
@@ -39,9 +41,10 @@ export default function Home() {
         <section className="relative overflow-hidden border-b border-champagne bg-porcelain">
           <div className="container-page grid min-h-[calc(100svh-4rem)] items-center gap-10 py-10 lg:grid-cols-[0.9fr_1.1fr] lg:py-0">
             <div className="z-10 max-w-2xl">
-              <h1 className="display-heading">Find couples you actually click with.</h1>
+              <p className="eyebrow">Couple friendship, made easier</p>
+              <h1 className="display-heading mt-4">Find your couple crew.</h1>
               <p className="body-large mt-6 max-w-xl">
-                Create a shared couple profile, connect with other couples who share your interests, and plan better dinners, activities, and nights out together.
+                Twogether helps couples meet like-minded couples, build real friendships, and make shared plans at local restaurants, activities, and venues.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a href="#waitlist" className="button-primary">
@@ -56,7 +59,7 @@ export default function Home() {
             <div className="relative min-h-[360px] overflow-hidden rounded-sm shadow-soft lg:-mr-10 lg:min-h-[620px]">
               <Image
                 src="/images/couples-dinner-hero.png"
-                alt="Two couples in relaxed conversation while planning a night out together"
+                alt="Two couples sharing a relaxed meal and conversation together"
                 fill
                 priority
                 sizes="(min-width: 1024px) 58vw, 100vw"
@@ -70,10 +73,10 @@ export default function Home() {
         <SectionShell
           id="about"
           label="The gap"
-          title="Making couple friends and coordinating plans is harder than it should be."
-          intro="Most couples rely on random texts, awkward group chats, or the same few friends every time. Even when everyone wants to go out, choosing the people, place, and time can become more work than the night itself."
+          title="Making couple friends should feel natural — not awkward."
+          intro={'Most couples want deeper friendships, but finding couples with similar interests, lifestyle, values, and energy is harder than it should be. Twogether helps turn "we should hang out sometime" into real plans with couples who feel like your kind of people.'}
         >
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
             {problemPoints.map((point) => (
               <div key={point} className="rounded-sm border border-champagne bg-white p-5">
                 <p className="text-base font-semibold leading-7 text-ink">{point}</p>
@@ -85,10 +88,10 @@ export default function Home() {
         <SectionShell
           className="bg-linen"
           label="The platform vision"
-          title="A planning platform for couples who want better people and better plans."
-          intro="Twogether is being shaped as a tool for couples to find compatible couples, choose where to go, coordinate availability, and turn a good idea into a real plan."
+          title="A friendship-first platform for couples who want real connection."
+          intro="Twogether is being built to help couples create shared profiles, discover similar couples nearby, start conversations, choose restaurants or activities, and coordinate real hangouts together."
         >
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {platformBenefits.map((benefit) => (
               <article key={benefit} className="rounded-sm border border-champagne bg-white p-5">
                 <div className="mb-5 h-1 w-10 bg-copper" />
@@ -101,10 +104,10 @@ export default function Home() {
         <SectionShell
           id="how-it-works"
           label="How it works"
-          title="From couple profile to real plan."
-          intro="This is the future workflow being validated. The full account, discovery, coordination, and planning product has not been built yet."
+          title="From couple profile to real hangout."
+          intro="This is the future workflow being validated. The full account, discovery, conversation, coordination, and planning product has not been built yet."
         >
-          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-5">
+          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-6">
             {howItWorks.map((step, index) => (
               <article key={step.title} className="rounded-sm border border-champagne bg-white p-6">
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-copper">
@@ -121,8 +124,8 @@ export default function Home() {
           id="plans"
           className="bg-ink text-white"
           label="What couples can plan"
-          title="Plans that fit real couple life."
-          intro="The goal is to support the everyday plans couples actually want to make together, from one-on-one double dates to small group nights out."
+          title="Real plans for real friendships."
+          intro="The goal is to support the everyday local hangouts couples actually want to make together, from dinner with another couple to activities and small group plans."
         >
           <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
             <div>
@@ -148,8 +151,8 @@ export default function Home() {
           id="founding-members"
           className="bg-porcelain"
           label="Founding membership"
-          title="Help shape the couples network before public launch."
-          intro="Founding membership is about early access to the future couples network, profile discovery, planning tools, restaurant perks, and early pricing."
+          title="Help shape the couple friendship network before public launch."
+          intro="Founding membership is about early access to the future couple friendship network, similar-couple discovery, planning tools, restaurant perks, and early pricing."
         >
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {foundingMemberBenefits.map((benefit) => (
@@ -165,8 +168,8 @@ export default function Home() {
           id="venue-partner"
           className="bg-linen"
           label="For restaurants & venues"
-          title="Be discovered when local couples are deciding where to go."
-          intro="Restaurants and venues can become discovery and booking partners for couples choosing dinners, activities, and group plans. The goal is local demand, not coupon-driven traffic."
+          title="Be discovered when local couples choose where to go."
+          intro="Restaurants and venues can become discovery and booking partners for couples choosing local restaurants, activities, and group plans. The goal is local demand, not coupon-driven traffic."
         >
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
             <div>
@@ -195,7 +198,7 @@ export default function Home() {
                 <p className="eyebrow">Founding couples</p>
                 <h2 className="section-heading mt-3">Join the founding couples list.</h2>
                 <p className="body-large mt-5">
-                  This form validates interest in the real platform: shared couple profiles, compatible couple discovery, and planning tools for better nights out.
+                  This form validates interest in the real platform: shared couple profiles, similar-couple discovery, natural conversations, and planning tools for real hangouts.
                 </p>
               </div>
               <CouplesWaitlistForm />
@@ -214,6 +217,20 @@ export default function Home() {
                 </p>
               </div>
               <VenuePartnerForm />
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-porcelain py-16 sm:py-20 lg:py-24" aria-labelledby="friendship-first-heading">
+          <div className="container-page">
+            <div className="rounded-sm border border-champagne bg-white p-6 shadow-sm sm:p-8 lg:p-10">
+              <p className="eyebrow">Trust &amp; safety</p>
+              <h2 id="friendship-first-heading" className="section-heading mt-3">
+                Friendship-first. Always.
+              </h2>
+              <p className="body-large mt-5 max-w-3xl">
+                Twogether is designed for established couples looking for genuine friendships, shared experiences, and local community. It is not a dating app, hookup app, swinger app, or adult lifestyle platform.
+              </p>
             </div>
           </div>
         </section>

@@ -31,7 +31,7 @@ export function CouplesWaitlistForm() {
       <div className="mb-8">
         <h3 className="font-serif text-3xl text-ink">Founding Couples List</h3>
         <p className="mt-3 text-sm leading-6 text-ink-soft">
-          Tell us what would make a couples planning platform useful enough to try, recommend, and eventually pay for.
+          Tell us what would make a couple friendship platform useful enough to try, recommend, and eventually pay for.
         </p>
       </div>
 
@@ -42,7 +42,7 @@ export function CouplesWaitlistForm() {
         <TextField label="Phone optional" name="phone" type="tel" autoComplete="tel" />
         <TextField label="City / neighborhood" name="cityNeighborhood" required autoComplete="address-level2" />
         <SelectField
-          label="Relationship status"
+          label="Couple status"
           name="relationshipStatus"
           required
           placeholder="Select one"
@@ -56,13 +56,13 @@ export function CouplesWaitlistForm() {
           options={["Yes", "No", "Prefer not to say"]}
         />
         <TextareaField
-          label="What types of couples would you like to meet?"
+          label="What kinds of couple friends would you like to meet?"
           name="coupleTypes"
           required
           placeholder="Similar life stage, new-to-Vegas, family-friendly, faith/community, business-minded, active, food-focused..."
         />
         <TextareaField
-          label="Favorite activities or date-night styles"
+          label="Favorite activities or hangout styles"
           name="favoriteActivities"
           required
           placeholder="Dinner, brunch, coffee, hiking, game nights, shows, family activities, low-key conversation..."
@@ -98,7 +98,7 @@ export function CouplesWaitlistForm() {
           label="What would make this valuable enough to pay for?"
           name="valueToPay"
           required
-          placeholder="Better couple recommendations, easier scheduling, restaurant perks, verified couples, planning tools..."
+          placeholder="Better discovery, easier scheduling, restaurant perks, verified couples, planning tools..."
         />
       </div>
 
