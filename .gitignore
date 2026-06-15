@@ -1,0 +1,12 @@
+.next
+node_modules
+.tools
+.vercel
+.qa
+out
+*.log
+.env
+.env*
+.DS_Store
+*.zip
+tsconfig.tsbuildinfo
