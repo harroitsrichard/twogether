@@ -98,7 +98,7 @@ export function CouplesWaitlistForm() {
           label="What would make this valuable enough to pay for?"
           name="valueToPay"
           required
-          placeholder="Better discovery, easier scheduling, restaurant perks, verified couples, planning tools..."
+          placeholder="Better discovery, easier scheduling, restaurant perks, verified couples, real-world plan tools..."
         />
       </div>
 
