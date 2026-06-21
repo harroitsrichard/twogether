@@ -1,11 +1,13 @@
 import Link from "next/link";
 
 const footerLinks = [
-  { href: "/couples", label: "Discover Couples" },
-  { href: "/experiences", label: "Experiences" },
-  { href: "/how-it-works", label: "How It Works" },
-  { href: "/venues", label: "For Venues" },
-  { href: "/join", label: "Join Waitlist" },
+  { href: "/#how-it-works", label: "How It Works" },
+  { href: "/#discover-couples", label: "Discover Couples" },
+  { href: "/#plan-together", label: "Plan Together" },
+  { href: "/#membership", label: "Membership" },
+  { href: "/#venues", label: "Venues" },
+  { href: "/#faq", label: "FAQ" },
+  { href: "/#founding-couples", label: "Join the List" },
 ];
 
 export function SiteFooter() {
@@ -15,7 +17,7 @@ export function SiteFooter() {
         <div>
           <p className="font-serif text-3xl font-bold tracking-tight text-cream">Twogether</p>
           <p className="mt-5 max-w-sm text-sm leading-7 text-cream/70">
-            Twogether helps couples discover quality couples, enjoy local experiences, and build meaningful friendships through real-world plans.
+            Create a couple profile, discover similar couples nearby, connect, choose a place, and make real plans together.
           </p>
         </div>
 

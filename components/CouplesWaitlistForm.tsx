@@ -31,7 +31,7 @@ export function CouplesWaitlistForm() {
       <div className="mb-8">
         <h3 className="font-serif text-3xl text-ink">Founding Couples List</h3>
         <p className="mt-3 text-sm leading-6 text-ink-soft">
-          Tell us what would make a friendship-first couples platform useful enough to try, recommend, and eventually pay for.
+          Tell us what would make profile discovery, easier planning, and local partner value useful enough to try, recommend, and pay for.
         </p>
       </div>
 
@@ -41,6 +41,13 @@ export function CouplesWaitlistForm() {
         <TextField label="Email" name="email" type="email" required autoComplete="email" />
         <TextField label="Phone optional" name="phone" type="tel" autoComplete="tel" />
         <TextField label="City / neighborhood" name="cityNeighborhood" required autoComplete="address-level2" />
+        <SelectField
+          label="Would you create a couple profile if it helped you discover similar couples nearby?"
+          name="coupleProfileInterest"
+          required
+          placeholder="Choose one"
+          options={["Yes, definitely", "Maybe, depending on privacy and quality", "No"]}
+        />
         <SelectField
           label="Couple Status"
           name="coupleStatus"
@@ -68,6 +75,21 @@ export function CouplesWaitlistForm() {
           placeholder="Dinner, brunch, coffee, hiking, game nights, shows, family activities, low-key conversation..."
         />
         <SelectField
+          label="Which would be most valuable to you?"
+          name="mostValuableFeature"
+          required
+          placeholder="Choose one"
+          options={[
+            "Discovering similar couples",
+            "Easier planning with another couple",
+            "Restaurant/activity ideas",
+            "Discounts or partner perks",
+            "Family-friendly hangouts",
+            "Small group plans",
+            "A cleaner, higher-quality couple community",
+          ]}
+        />
+        <SelectField
           label="Preferred group size"
           name="preferredGroupSize"
           required
@@ -82,17 +104,24 @@ export function CouplesWaitlistForm() {
           options={["Weekly", "A few times per month", "Monthly", "Every few months", "Not sure yet"]}
         />
         <SelectField
-          label="Would you consider paying monthly for access?"
-          name="monthlyPaymentInterest"
+          label="Which pricing direction feels most realistic?"
+          name="pricingPreference"
           required
           placeholder="Choose one"
           options={[
-            "Yes, under $19/month",
-            "Yes, $19-$29/month",
-            "Yes, $29-$49/month",
-            "Maybe, depends on value",
-            "No",
+            "Free profile only",
+            "$22/month if the network and perks are valuable",
+            "$122/year founding annual",
+            "$200/year regular annual",
+            "Not sure yet",
+            "I would not pay",
           ]}
+        />
+        <TextareaField
+          label="What would make you excited to go on a Twogether plan?"
+          name="twogetherPlanExcitement"
+          required
+          placeholder="The right couple, an easy place to meet, clear availability, a useful perk, a low-pressure first hangout..."
         />
         <TextareaField
           label="What would make this valuable enough to pay for?"

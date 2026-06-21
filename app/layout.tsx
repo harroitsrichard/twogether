@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Twogether | Couples Friendship & Local Experiences",
+  title: "Twogether | Find Couple Friends and Make Real Plans",
   description:
-    "Twogether helps couples meet quality couples, explore local experiences, use partner perks, and build meaningful friendships through real-world plans.",
+    "Create a shared couple profile, discover similar couples nearby, connect naturally, choose a local place or activity, and make real plans together.",
 };
 
 export default function RootLayout({

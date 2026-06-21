@@ -1,10 +1,12 @@
 import Link from "next/link";
 
 const navLinks = [
-  { href: "/couples", label: "Discover Couples" },
-  { href: "/experiences", label: "Experiences" },
-  { href: "/how-it-works", label: "How It Works" },
-  { href: "/venues", label: "For Venues" },
+  { href: "/#how-it-works", label: "How It Works" },
+  { href: "/#discover-couples", label: "Discover Couples" },
+  { href: "/#plan-together", label: "Plan Together" },
+  { href: "/#membership", label: "Membership" },
+  { href: "/#venues", label: "Venues" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 type SiteHeaderProps = {
@@ -30,7 +32,7 @@ export function SiteHeader({ variant = "light" }: SiteHeaderProps) {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary navigation">
+        <nav className="hidden items-center gap-4 xl:flex" aria-label="Primary navigation">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -45,14 +47,14 @@ export function SiteHeader({ variant = "light" }: SiteHeaderProps) {
         </nav>
 
         <Link
-          href="/join"
+          href="/#founding-couples"
           className={`hidden min-h-12 items-center justify-center rounded-md px-6 py-3 text-sm font-semibold transition focus:outline-none focus:ring-2 sm:inline-flex sm:whitespace-nowrap ${
             isDark
               ? "bg-clay text-cream hover:bg-clay-dark focus:ring-clay focus:ring-offset-2 focus:ring-offset-navy"
               : "bg-navy text-cream hover:bg-navy-soft focus:ring-navy focus:ring-offset-2 focus:ring-offset-cream"
           }`}
         >
-          Join Waitlist
+          Join the List
         </Link>
       </div>
     </header>

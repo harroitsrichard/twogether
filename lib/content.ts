@@ -52,31 +52,41 @@ export const faqs = [
   {
     question: "Who is Twogether for?",
     answer:
-      "Twogether is for established couples who want to discover quality couples, explore local experiences, and build meaningful friendships through real-world plans.",
+      "Twogether is for established couples who want to create a shared profile, discover similar couples nearby, connect, and make real plans together.",
   },
   {
     question: "How do couples discover each other?",
     answer:
-      "Couples create shared profiles with interests, city, lifestyle tags, and favorite activities so they can find like-minded couples nearby.",
+      "Shared couple profiles can include interests, lifestyle, location, availability, favorite hangouts, and planning preferences so couples have useful context before connecting.",
   },
   {
-    question: "Do couples choose their own plans?",
+    question: "What is built right now?",
     answer:
-      "Yes. Couples decide who to connect with, which local experiences to explore, and what plans make sense for everyone involved.",
+      "Right now, Twogether is validating the Las Vegas founding network, couple profile preferences, planning use cases, venue interest, and pricing. The full account, discovery, connection, messaging, payment, and planning tools are not fully live yet.",
   },
   {
-    question: "What kinds of experiences are included?",
+    question: "What is the first version supposed to prove?",
     answer:
-      "Twogether is built around everyday local experiences such as restaurants, coffee, trivia, pickleball, breweries, live music, game nights, and weekend activities.",
+      "The first version is designed to prove whether couples want to create a shared profile, discover similar couples, connect, choose a place or activity, and actually meet up.",
   },
   {
-    question: "How do partner discounts work?",
+    question: "Will couples control their own plans?",
     answer:
-      "Local partners can offer perks that give couples more reasons to try new places and make real-world plans together.",
+      "Yes. Twogether is not a concierge dinner service. Couples choose who they connect with, where they go, and when they meet. The platform reduces friction without taking over.",
   },
   {
-    question: "Is this live yet?",
+    question: "What kinds of plans can couples make?",
     answer:
-      "Twogether is building the founding Las Vegas community first. Couples and local partners can join the interest lists while the full product is shaped.",
+      "Plans can include coffee, dessert, brunch, casual dinner, game nights, live music, outdoor activities, family-friendly weekends, and small group outings.",
+  },
+  {
+    question: "Is the pricing final?",
+    answer:
+      "No. Free founding profiles, a planned $122 founding annual offer, and a future $22 monthly direction are being validated and may change before public launch.",
+  },
+  {
+    question: "How can restaurants and activity venues participate?",
+    answer:
+      "Early partners can explore featured placement, useful perks, group offers, preferred experiences, or future referral models without committing to a heavy paid package.",
   },
 ];

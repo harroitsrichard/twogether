@@ -71,16 +71,18 @@ export function VenuePartnerForm() {
           options={["2 couples", "3-5 couples", "6-10 couples", "10+ couples", "Flexible"]}
         />
         <SelectField
-          label="Are you open to partner perks, preferred placement, prix fixe group experiences, or referral/revenue-share discussions?"
-          name="partnershipOpenness"
+          label="Which partnership model would interest you most?"
+          name="preferredPartnershipModel"
           required
           placeholder="Select one"
           options={[
-            "Yes, open to discussing",
-            "Maybe, depends on the model",
-            "Only partner perks or featured placement",
-            "Only group experiences",
-            "Not at this time",
+            "Featured placement",
+            "Partner perk/comped item",
+            "Group offer",
+            "Preferred experience",
+            "Referral/reservation model",
+            "Sponsorship",
+            "Not sure yet",
           ]}
         />
         <TextareaField
