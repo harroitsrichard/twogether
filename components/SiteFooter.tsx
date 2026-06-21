@@ -1,13 +1,13 @@
 import Link from "next/link";
 
 const footerLinks = [
-  { href: "/#how-it-works", label: "How It Works" },
-  { href: "/#discover-couples", label: "Discover Couples" },
-  { href: "/#plan-together", label: "Plan Together" },
-  { href: "/#membership", label: "Membership" },
-  { href: "/#venues", label: "Venues" },
-  { href: "/#faq", label: "FAQ" },
-  { href: "/#founding-couples", label: "Join the List" },
+  { href: "/couples", label: "Discover Couples" },
+  { href: "/how-it-works", label: "How It Works" },
+  { href: "/experiences", label: "Experiences" },
+  { href: "/membership", label: "Membership" },
+  { href: "/venues", label: "Venues" },
+  { href: "/faq", label: "FAQ" },
+  { href: "/join", label: "Join the List" },
 ];
 
 export function SiteFooter() {

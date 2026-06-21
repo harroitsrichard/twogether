@@ -1,62 +1,121 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowIcon } from "@/components/MarketingVisuals";
-import { CouplesWaitlistForm } from "@/components/CouplesWaitlistForm";
-import { FAQ } from "@/components/FAQ";
-import {
-  CoupleDiscoverySection,
-  GapSection,
-  MembershipSection,
-  PlanCategoriesSection,
-  PlanningFlowSection,
-  ProductPreviewSection,
-  TrustSafetySection,
-  VenuePartnershipSection,
-} from "@/components/HomeProductSections";
+import { ArrowIcon, PlanImage, ProfileImage } from "@/components/MarketingVisuals";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { VenuePartnerForm } from "@/components/VenuePartnerForm";
 import { heroImage } from "@/lib/marketingContent";
 
-const productLoop = ["Profile", "Discover", "Connect", "Pick a spot", "Make it happen"];
+const steps = [
+  {
+    number: "01",
+    title: "Discover couples",
+    copy: "Find like-minded couples nearby through shared interests and everyday life.",
+    icon: "discover",
+  },
+  {
+    number: "02",
+    title: "Connect naturally",
+    copy: "Start a conversation with useful context already built in.",
+    icon: "connect",
+  },
+  {
+    number: "03",
+    title: "Make a plan",
+    copy: "Choose a place, activity, and time that work for both couples.",
+    icon: "plan",
+  },
+  {
+    number: "04",
+    title: "Build your circle",
+    copy: "Turn a good first hangout into meaningful friendship and community.",
+    icon: "community",
+  },
+];
 
-function HeroProductLoop() {
+const pathways = [
+  {
+    title: "Meet couples like you",
+    copy: "See how shared profiles help couples find people with similar interests, lifestyles, and social pace.",
+    href: "/couples",
+    linkLabel: "Discover Couples",
+    image: "profiles",
+  },
+  {
+    title: "Turn conversation into plans",
+    copy: "Follow the Twogether flow from a first hello to a confirmed place and time.",
+    href: "/how-it-works",
+    linkLabel: "How It Works",
+    image: "plan",
+    position: "34% 52%",
+  },
+  {
+    title: "Find local places to go",
+    copy: "Explore restaurants, activities, local favorites, and future partner perks.",
+    href: "/experiences",
+    linkLabel: "Experiences",
+    image: "plan",
+    position: "58% 45%",
+  },
+  {
+    title: "See membership options",
+    copy: "Learn what is included in the free founding profile and planned paid membership options.",
+    href: "/membership",
+    linkLabel: "Membership",
+    image: "plan",
+    position: "82% 48%",
+  },
+];
+
+function StepIcon({ name }: { name: string }) {
+  const common = {
+    fill: "none",
+    stroke: "currentColor",
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+    strokeWidth: 1.7,
+  };
+
   return (
-    <div className="mt-8 flex flex-wrap items-center gap-2 text-xs font-bold text-cream/75 sm:text-sm">
-      {productLoop.map((step, index) => (
-        <div key={step} className="flex items-center gap-2">
-          <span className="rounded-full border border-cream/20 bg-cream/10 px-3 py-2">{step}</span>
-          {index < productLoop.length - 1 ? (
-            <span className="text-clay" aria-hidden="true">
-              <ArrowIcon />
-            </span>
-          ) : null}
-        </div>
-      ))}
-    </div>
+    <span className="grid h-14 w-14 place-items-center rounded-full bg-sand text-sage" aria-hidden="true">
+      <svg viewBox="0 0 24 24" className="h-7 w-7">
+        {name === "discover" ? (
+          <>
+            <circle cx="10.5" cy="10.5" r="5.5" {...common} />
+            <path d="m15 15 4 4" {...common} />
+          </>
+        ) : null}
+        {name === "connect" ? (
+          <>
+            <path d="M5 6.5h14v9H9l-4 3v-12Z" {...common} />
+            <path d="M9 10h6M9 13h4" {...common} />
+          </>
+        ) : null}
+        {name === "plan" ? (
+          <>
+            <rect x="4" y="5.5" width="16" height="14" rx="2" {...common} />
+            <path d="M8 3.5v4M16 3.5v4M4 9.5h16M8 13h3M8 16h6" {...common} />
+          </>
+        ) : null}
+        {name === "community" ? (
+          <>
+            <circle cx="8" cy="9" r="2.5" {...common} />
+            <circle cx="16" cy="9" r="2.5" {...common} />
+            <path d="M3.5 19c.3-3.1 2-5 4.5-5s4.2 1.9 4.5 5M11.5 19c.3-3.1 2-5 4.5-5s4.2 1.9 4.5 5" {...common} />
+          </>
+        ) : null}
+      </svg>
+    </span>
   );
 }
 
-function HeroVisual() {
+function PathwayImage({ image, position, title }: { image: string; position?: string; title: string }) {
+  if (image === "profiles") {
+    return <ProfileImage position="0% 0%" className="aspect-[16/10] w-full" alt={`${title} preview`} />;
+  }
+
   return (
-    <div className="relative">
-      <div className="absolute -inset-6 rounded-[2.5rem] bg-clay/10 blur-2xl" />
-      <div className="relative overflow-hidden rounded-[2rem] border border-cream/10 bg-cream/10 shadow-soft">
-        <div className="relative min-h-[360px] sm:min-h-[520px]">
-          <Image
-            src={heroImage}
-            alt="Several couples laughing together during a lively local hangout"
-            fill
-            priority
-            sizes="(min-width: 1024px) 58vw, 100vw"
-            className="object-cover"
-          />
-        </div>
-        <div className="absolute inset-x-4 bottom-4 rounded-xl border border-cream/20 bg-navy/80 p-4 backdrop-blur">
-          <p className="text-xs font-bold uppercase tracking-[0.16em] text-sage-light">A Twogether plan</p>
-          <p className="mt-2 text-sm font-bold text-cream">Two couples. A place everyone likes. A time everyone confirmed.</p>
-        </div>
-      </div>
+    <div className="aspect-[16/10] overflow-hidden">
+      <PlanImage position={position ?? "50% 50%"} title={title} />
     </div>
   );
 }
@@ -64,84 +123,109 @@ function HeroVisual() {
 export default function Home() {
   return (
     <>
-      <SiteHeader variant="dark" />
+      <SiteHeader />
       <main id="top" className="bg-cream text-navy">
-        <section className="overflow-hidden bg-navy text-cream">
-          <div className="container-page grid min-h-[calc(100svh-4rem)] items-center gap-12 py-12 lg:grid-cols-[0.82fr_1.18fr] lg:py-16">
-            <div className="max-w-2xl">
-              <h1 className="display-heading text-cream">Find your couple crew.</h1>
-              <p className="mt-6 max-w-xl text-base leading-8 text-cream/80 sm:text-lg">
-                Twogether helps couples create a shared profile, discover similar couples nearby,
-                connect naturally, and make real plans at local restaurants, activities, and venues.
+        <section className="border-b border-navy/10">
+          <div className="container-page grid items-center gap-10 py-12 lg:min-h-[680px] lg:grid-cols-[0.75fr_1.25fr] lg:gap-12 lg:py-14">
+            <div className="max-w-xl">
+              <h1 className="display-heading">Find your couple crew.</h1>
+              <p className="mt-6 max-w-lg text-lg leading-8 text-navy/70">
+                Meet like-minded couples, make real plans, and build friendships around the things
+                you already love to do.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <Link
-                  href="#founding-couples"
-                  className="inline-flex min-h-12 items-center justify-center rounded-md bg-clay px-6 py-3 text-sm font-semibold text-cream transition hover:bg-clay-dark focus:outline-none focus:ring-2 focus:ring-clay focus:ring-offset-2 focus:ring-offset-navy sm:whitespace-nowrap"
-                >
+                <Link href="/join" className="button-primary">
                   Join the Founding Couples List
                 </Link>
-                <Link
-                  href="#how-it-works"
-                  className="inline-flex min-h-12 items-center justify-center rounded-md border border-cream/30 px-6 py-3 text-sm font-semibold text-cream transition hover:border-cream hover:bg-cream hover:text-navy focus:outline-none focus:ring-2 focus:ring-cream focus:ring-offset-2 focus:ring-offset-navy sm:whitespace-nowrap"
-                >
+                <Link href="/how-it-works" className="button-secondary">
                   See How It Works
                 </Link>
               </div>
-              <Link href="#venues" className="mt-5 inline-flex text-sm font-semibold text-cream/70 underline decoration-clay underline-offset-4 hover:text-cream">
-                For Restaurants &amp; Venues
-              </Link>
-              <HeroProductLoop />
+              <div className="mt-8 flex items-center gap-3 border-t border-navy/10 pt-5 text-sm font-semibold leading-6 text-navy/65">
+                <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-sage/20 text-sage" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" className="h-6 w-6">
+                    <circle cx="8" cy="8" r="2.5" fill="currentColor" />
+                    <circle cx="16" cy="8" r="2.5" fill="currentColor" />
+                    <path d="M3.5 19c.2-4 1.8-6 4.5-6s4.3 2 4.5 6M11.5 19c.2-4 1.8-6 4.5-6s4.3 2 4.5 6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+                  </svg>
+                </span>
+                <span>Friendship-first. Built for established couples.</span>
+              </div>
             </div>
-            <HeroVisual />
+
+            <div className="relative min-h-[420px] overflow-hidden rounded-lg border border-navy/10 bg-sand shadow-soft sm:min-h-[560px]">
+              <Image
+                src={heroImage}
+                alt="A group of established couples laughing together at a lively local food hall"
+                fill
+                priority
+                sizes="(min-width: 1024px) 58vw, 100vw"
+                className="object-cover"
+              />
+            </div>
           </div>
         </section>
 
-        <GapSection />
-        <ProductPreviewSection />
-        <CoupleDiscoverySection />
-        <PlanningFlowSection />
-        <PlanCategoriesSection />
-        <MembershipSection />
-        <VenuePartnershipSection />
-        <TrustSafetySection />
-
-        <section id="founding-couples" className="scroll-mt-24 bg-cream py-16 sm:py-20 lg:py-24">
-          <div className="container-page grid gap-8 lg:grid-cols-[0.66fr_1.34fr] lg:items-start">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.18em] text-clay">Founding couples</p>
-              <h2 className="section-heading mt-3">Help shape the first Las Vegas network.</h2>
-              <p className="body-large mt-5">
-                Tell us what kind of couple friends, local hangouts, planning support, and pricing would make Twogether worth using.
-              </p>
-            </div>
-            <CouplesWaitlistForm />
-          </div>
-        </section>
-
-        <section id="venue-partner" className="scroll-mt-24 bg-sand py-16 sm:py-20 lg:py-24">
-          <div className="container-page grid gap-8 lg:grid-cols-[0.66fr_1.34fr] lg:items-start">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.18em] text-clay">Early venue partners</p>
-              <h2 className="section-heading mt-3">Test useful offers without a heavy package.</h2>
-              <p className="body-large mt-5">
-                Start with a perk, featured placement, group offer, or preferred experience and learn what brings quality local couples through the door.
-              </p>
-            </div>
-            <VenuePartnerForm />
-          </div>
-        </section>
-
-        <section id="faq" className="scroll-mt-24 bg-cream py-16 sm:py-20 lg:py-24">
+        <section className="bg-white py-14 sm:py-16">
           <div className="container-page">
-            <div className="mb-10 max-w-3xl">
-              <p className="text-xs font-bold uppercase tracking-[0.18em] text-clay">FAQ</p>
-              <h2 className="section-heading mt-3">What is live now, and what comes next?</h2>
-              <p className="body-large mt-5">
-                Clear answers about the founding network, product status, couple control, pricing, and local partners.
+            <h2 className="mx-auto max-w-3xl text-center font-serif text-3xl leading-tight sm:text-4xl">
+              Friendships that fit your life, in four simple steps.
+            </h2>
+            <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+              {steps.map((step, index) => (
+                <article key={step.title} className="relative text-center">
+                  <div className="flex justify-center">
+                    <StepIcon name={step.icon} />
+                  </div>
+                  <p className="mt-4 text-sm font-bold text-clay">{step.number}</p>
+                  <h3 className="mt-2 font-serif text-2xl leading-tight">{step.title}</h3>
+                  <p className="mx-auto mt-3 max-w-xs text-sm leading-6 text-navy/65">{step.copy}</p>
+                  {index < steps.length - 1 ? (
+                    <span className="absolute -right-4 top-5 hidden text-sage/60 lg:block" aria-hidden="true">
+                      <ArrowIcon />
+                    </span>
+                  ) : null}
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-sand py-14 sm:py-16 lg:py-20">
+          <div className="container-page">
+            <div className="mx-auto max-w-2xl text-center">
+              <h2 className="section-heading">Explore Twogether</h2>
+              <p className="mt-4 text-base leading-7 text-navy/65">
+                Start with the part of the experience that matters most to you.
               </p>
             </div>
-            <FAQ />
+            <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+              {pathways.map((pathway) => (
+                <article key={pathway.title} className="overflow-hidden rounded-lg border border-navy/10 bg-cream shadow-sm">
+                  <PathwayImage image={pathway.image} position={pathway.position} title={pathway.title} />
+                  <div className="p-5">
+                    <h3 className="font-serif text-2xl leading-tight">{pathway.title}</h3>
+                    <p className="mt-3 text-sm leading-6 text-navy/65">{pathway.copy}</p>
+                    <Link href={pathway.href} className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-clay transition hover:text-clay-dark">
+                      {pathway.linkLabel}
+                      <ArrowIcon />
+                    </Link>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-navy py-14 text-center text-cream sm:py-16">
+          <div className="container-page">
+            <h2 className="font-serif text-4xl leading-tight text-cream sm:text-5xl">Las Vegas is better together.</h2>
+            <p className="mx-auto mt-4 max-w-xl text-base leading-7 text-cream/70">
+              Be part of the founding couples helping shape the first Twogether community.
+            </p>
+            <Link href="/join" className="mt-7 inline-flex min-h-12 items-center justify-center rounded-md bg-clay px-6 py-3 text-sm font-semibold text-cream transition hover:bg-clay-dark focus:outline-none focus:ring-2 focus:ring-clay focus:ring-offset-2 focus:ring-offset-navy">
+              Join the Founding Couples List
+            </Link>
           </div>
         </section>
       </main>
